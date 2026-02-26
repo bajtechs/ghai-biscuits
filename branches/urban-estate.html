@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Urban Estate - Ghai Biscuits</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+<script src="../assets/js/main.js"></script>
+</head>
+<body>
+
+<div class="hero" style="background-image:url('https://images.unsplash.com/photo-1587248720327-8eb72564be1e?w=1600'); position:relative;">
+<div class="overlay"></div>
+<div class="hero-content">
+<h1>Urban Estate Branch</h1>
+</div>
+</div>
+
+<div class="section">
+<h2>Our Specials</h2>
+
+<div class="menu-item">
+<img src="https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?w=400">
+<div>
+Butter Cookies - ₹220
+</div>
+<button class="btn primary" onclick="addToCart('urban-estate','Butter Cookies',220)">Add</button>
+</div>
+
+<div class="menu-item">
+<img src="https://images.unsplash.com/photo-1603532648955-039310d9ed75?w=400">
+<div>
+Cashew Biscuits - ₹320
+</div>
+<button class="btn primary" onclick="addToCart('urban-estate','Cashew Biscuits',320)">Add</button>
+</div>
+
+</div>
+
+<div class="section">
+<h2>Your Cart</h2>
+<div id="cart-items"></div>
+<p>Total: ₹<span id="total">0</span></p>
+
+<input id="name" placeholder="Full Name">
+<input id="phone" placeholder="Phone Number">
+
+<button class="btn secondary" onclick="loadCart('urban-estate')">Refresh Cart</button>
+<button class="btn primary" onclick="submitOrder('urban-estate')">Place Order</button>
+</div>
+
+<footer>
+<a href="../index.html"><button class="btn primary">Back Home</button></a>
+</footer>
+
+</body>
+</html>
